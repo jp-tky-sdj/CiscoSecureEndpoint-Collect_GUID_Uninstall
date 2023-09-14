@@ -1,0 +1,2 @@
+# CiscoSecureEndpoint-Collect_GUID_Uninstall
+Cisco Secure Endpointにおいて指定日数観測されないGUIDの情報をCSVファイルにアウトプットする collect_inactive_guids.py 。CSVにリストされたGUIDを持つコネクター（エージェント）を一括で端末からアンインストールするようAPIでリクエストする  uninstall_connector.py。
