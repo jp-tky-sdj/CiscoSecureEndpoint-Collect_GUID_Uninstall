@@ -10,10 +10,13 @@ CLIENT_ID = **YOUR_API_CLIENT_ID_from_API-Credential**
 API_KEY_V1 = **YOUR_API_KEY_for_API_CLIENT_ID**
 
 以下のコミュニティ記事の 「1.APIクレデンシャルの作成」にて紹介されている方法で取得した値に書き換えて保存します。
+
 **参考： Cisco AMP for Endpoints APIの使い方について**
+
 https://community.cisco.com/t5/-/-/ta-p/3220035
 
 APJCにビジネスを持つユーザの場合 API エンドポイントは以下の ”apjc" という文字列がURLに含まれたものになっていると想定しています。
+
 **BASE_URL_V1 = https://api.apjc.amp.cisco.com/v1**
 
 これら３つの変数を、自身の環境の値に書き換えれば collect_inactive_guids.py は動作しCSVを出力します。
@@ -27,10 +30,14 @@ getaccesstoken.sh を実行すると、client ID と client secret を問われ�
 **ORGANIZATION_ID** の値として書き換え保存します。
 ※トークンには有効期間があることに注意してください。
 この **getaccesstoken.sh** は以下の Cisco Developer　のサイトを参考にして再編したスクリプトで、APJCのビジネスで動作するものとなっています。
+
 **参考： Cisco Developer > Secure Endpoint API > Authentication**
+
 https://developer.cisco.com/docs/secure-endpoint/#!authentication/3-generate-securex-api-access-token
+
 このスクリプトとは直接関係はないですが、以下の日本語によるコミュニティ記事も紹介します。
 **参考： [Secure Endpoint] Postmanを使ったSecure Endpoint API v3のテスト方法**
+
 https://community.cisco.com/t5/-/-/ta-p/4704030
 
 これで config.ini の変数を全て自身の環境の値に書き換えて保存すれば準備は完了です。
