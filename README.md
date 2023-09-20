@@ -7,7 +7,7 @@ collect_inactive_guids.py は Secure Endpoint　の API エンドポイントの
 config.ini にある、以下の太字の部分は
 
 CLIENT_ID = **YOUR_API_CLIENT_ID_from_API-Credential**
-API_KEY_V1 = **YOUR_API_KEY_for_API_CLIENT_ID**
+API_KEY_V1 = **YOUR_API_KEY_for_API_CLIENT_ID** 
 
 以下のコミュニティ記事の 「1.APIクレデンシャルの作成」にて紹介されている方法で取得した値に書き換えて保存します。
 
@@ -43,14 +43,18 @@ https://community.cisco.com/t5/-/-/ta-p/4704030
 これで config.ini の変数を全て自身の環境の値に書き換えて保存すれば準備は完了です。
 
 # collect_inactive_guids.py の実行
-python3 collect_inactive_guids.py 
+
+`python3 collect_inactive_guids.py `
+
 と実行すると、
 「何日以上活動がない端末の情報を収集しますか？:」
 と問われるので、半角数字で入力します。回答した日数以上活動の見られないコネクタのGUIDを集め同じディレクトリにCSV形式でアウトプットします。
 
 # uninstall_connector.py の実行
 次に、このCSVファイルが同じディレクトリにある状態でuninstall_connector.pyを
-python3 uninstall_connector.py
+
+`python3 uninstall_connector.py`
+
 というように実行すると、CSVに記載のあるGUIDを持つコネクタに対して、アンインストールをリクエストします。
 
 
